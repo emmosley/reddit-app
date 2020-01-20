@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
 .post {
     width: 60vw;
     margin: auto;
@@ -5,20 +6,45 @@
     background-color: white;
     border: 1px solid #000;
     border-radius: 5px; 
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .header {
     background-image: url("bannerBackgroundImage_wmbf6g1dei301.png"); 
     height: 200px;
 }
-html {
-    background-color: #DAE0E6;
+* {
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
-h1{
+.pageTitle{
     background-color: white;
+    display: flex;
 }
 
 li {
     list-style-type: none;
 }
+
+body {
+    background-color: #DAE0E6;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+.communityIcon {
+    border-radius: 50%;
+    width: 72px;
+    border: 1px solid white;
+}
+.break {
+    flex-basis: 100%;
+    height: 0;
+  }

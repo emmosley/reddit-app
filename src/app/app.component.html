@@ -1,12 +1,16 @@
 <div class="header">
 </div>
-<h1>
+<div class="pageTitle">
+  <img src="https://styles.redditmedia.com/t5_2qh1o/styles/communityIcon_vzx333xor7101.png" class="communityIcon">
+  <h1>
   A subreddit for cute and cuddly pictures
-</h1>
-<p>
+  </h1>
+  <!-- <div class="break"></div> -->
+  <p>
   r/aww
-</p>
-  <ul>
+  </p>
+</div>
+<ul>
 <li *ngFor="let post of data.data.children">
   <div class="post"> {{ post.data.title }}
   <img class="image" src="{{post.data.thumbnail}}">

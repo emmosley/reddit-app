@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class ApiService {
   apiUrl = 'https://www.reddit.com/r/aww/.json';
   constructor(private http: HttpClient) { }
-  getData() {
+  fetchAwwSubreddit() {
     return this.http.get(this.apiUrl);
     }
 }

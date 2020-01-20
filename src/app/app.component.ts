@@ -10,5 +10,5 @@ import { ApiService } from './api.service';
 export class AppComponent {
   constructor(private apiService: ApiService) {}
   title = 'reddit-app';
-  data = this.apiService.getData().subscribe((data) => this.data = { ...data });
+  data = this.apiService.fetchAwwSubreddit().subscribe((data) => this.data = { ...data });
 }

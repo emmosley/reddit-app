@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
+
 .post {
     width: 60vw;
     margin: auto;
@@ -7,6 +8,7 @@
     border: 1px solid #000;
     border-radius: 5px; 
     font-family: 'IBM Plex Sans', sans-serif;
+    display: flex;
 }
 
 .header {
@@ -20,16 +22,19 @@
 .pageTitle{
     background-color: white;
     display: flex;
+    flex-direction: column;
 }
 
 li {
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
 }
-
-body {
-    background-color: #DAE0E6;
+a{
+    display: block;
+    color: #329999;
+    text-decoration: none;
 }
-
 p {
     margin: 0;
     padding: 0;

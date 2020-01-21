@@ -1,7 +1,7 @@
 <div class="header">
 </div>
 <div class="pageTitle">
-  <div>
+  <div class="titleImage">
     <img src="https://styles.redditmedia.com/t5_2qh1o/styles/communityIcon_vzx333xor7101.png" class="communityIcon">
     <h1>A subreddit for cute and cuddly pictures</h1>
   </div>
@@ -11,11 +11,12 @@
   </p>
 </div>
 <ul>
-<li *ngFor="let post of data.data.children">
-  <div class="post"><img class="image" src="{{post.data.thumbnail}}">
-  <div class="title"> {{ post.data.title }}
-  <a href="{{post.data.permalink}}">Click here to view post</a>
-</div>
-</div>
+<li *ngFor="let post of data.data.children; let i=index">
+  <div class="post" *ngIf="i<10">
+    <img class="image" src="{{post.data.thumbnail}}">
+    <div class="title"> {{ post.data.title }}
+    <a href="{{post.data.permalink}}">Click here to view post</a>
+    </div>
+    </div>
 </li>
 </ul>

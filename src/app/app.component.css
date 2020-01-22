@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
 
 .post {
-    width: 60vw;
+    width: 50vw;
     margin: auto;
     margin-bottom: 10px;
     background-color: white;
     border: 1px solid #000;
-    border-radius: 5px; 
+    border-radius: 10px; 
     font-family: 'IBM Plex Sans', sans-serif;
     display: flex;
 }
@@ -37,6 +37,7 @@ a{
     color: #329999;
     text-decoration: none;
     font-size: 1em;
+    align-items: flex-end;
 }
 p {
     margin: 0;
@@ -62,8 +63,58 @@ h1 {
     height: 0;
   }
 
-  .postImage {
-      padding: 2px;
+.postImage {
+      padding: 5px;
   }
   
-  
+.about {
+    width: 20vw;
+    height: fit-content;
+    box-shadow: 0 0 0 1pt black;
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+.community {
+    background-color: #329999;
+    border-radius: 10px; 
+    padding: 5px;
+    color: white;
+    font-weight: 1000;
+}
+
+  .main {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 80vw;
+      margin: auto;
+  }
+
+  .info {
+      background-color: white;
+      padding: 5px;
+      border-radius: 5px;
+      margin: 2px;
+  }
+
+ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .main {
+        flex-direction: column;
+        width: 95vw;
+    }
+
+    .post {
+        width: 95vw;
+    }
+
+    .pageTitle {
+        width: 100%;
+    }
+    }

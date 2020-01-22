@@ -10,13 +10,18 @@
   r/aww
   </p>
 </div>
-<ul>
-<li *ngFor="let post of data.data.children; let i=index">
-  <div class="post" *ngIf="i<10">
-    <img class="postImage" src="{{post.data.thumbnail}}">
-    <div class="title"> {{ post.data.title }}
-    <a href="{{post.data.permalink}}">Click here to view post</a>
-    </div>
-    </div>
-</li>
-</ul>
+<div class="main">
+  <ul>
+    <li *ngFor="let post of data.data.children; let i=index">
+      <div class="post" *ngIf="i<10">
+      <img class="postImage" src="{{post.data.thumbnail}}">
+      <div class="title"> {{ post.data.title }}
+      <a href="{{post.data.permalink}}">Click here to view post</a>      </div>
+      </div>
+    </li>
+  </ul>
+<div class="about">
+  <div class="community">About Community</div>
+  <div class="info">Things that make you go AWW! Like puppies, bunnies, babies, and so on... A place for really cute pictures and videos!
+  </div></div>
+</div>

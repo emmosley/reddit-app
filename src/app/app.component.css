@@ -24,6 +24,7 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    width: 75vw;
 }
 
 li {
@@ -35,6 +36,7 @@ a{
     display: block;
     color: #329999;
     text-decoration: none;
+    font-size: 1em;
 }
 p {
     margin: 0;
@@ -52,9 +54,16 @@ h1 {
 .communityIcon {
     border-radius: 50%;
     width: 72px;
+    height: 72px;
     border: 1px solid white;
 }
 .break {
     flex-basis: 100%;
     height: 0;
   }
+
+  .postImage {
+      padding: 2px;
+  }
+  
+  

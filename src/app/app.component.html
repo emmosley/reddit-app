@@ -13,7 +13,7 @@
 <ul>
 <li *ngFor="let post of data.data.children; let i=index">
   <div class="post" *ngIf="i<10">
-    <img class="image" src="{{post.data.thumbnail}}">
+    <img class="postImage" src="{{post.data.thumbnail}}">
     <div class="title"> {{ post.data.title }}
     <a href="{{post.data.permalink}}">Click here to view post</a>
     </div>
